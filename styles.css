@@ -1,0 +1,131 @@
+/* Custom Color Variables for Tailwind */
+/* These are defined as custom classes in Tailwind config or directly in CSS */
+.bg-dark-bg { background-color: #0A0A0A; } /* Very dark grey for main background */
+.bg-dark-bg-lighter { background-color: #1A1A1A; } /* Slightly lighter dark grey for gradients */
+.bg-nav-dark { background-color: #1A1A1A; } /* Dark grey for navigation and footer */
+.bg-card-bg { background-color: #1A1A1A; } /* Dark grey for cards */
+
+.text-light-text { color: #E0E0E0; } /* Light grey for main text */
+.text-secondary-text { color: #A0A0A0; } /* Medium grey for secondary text */
+.text-tertiary-text { color: #718096; } /* Darker grey for subtle text/icons */
+
+.text-pink-lightest { color: #ffe4e6; } /* Very light pink for subtle highlights */
+.text-pink-light { color: #f687b3; } /* Lighter pink for hover/accents */
+.text-pink-main { color: #f660a1; } /* Main pink fanta color */
+.text-pink-accent { color: #e0247e; } /* Stronger pink for headings/primary elements */
+.text-pink-darker { color: #c5307c; } /* Darker pink for backgrounds/stronger elements */
+.text-pink-darkest { color: #9b2c65; } /* Even darker pink */
+
+.bg-pink-lightest { background-color: #ffe4e6; }
+.bg-pink-main { background-color: #f660a1; }
+.bg-pink-darker { background-color: #e0247e; }
+.bg-pink-darkest { background-color: #c5307c; }
+
+.border-pink-lightest { border-color: #ffe4e6; }
+.border-pink-main { border-color: #f660a1; }
+
+/* General Glow Effect */
+.glow-text {
+    text-shadow: 0 0 8px rgba(246, 96, 161, 0.8);
+}
+.glow-button {
+    box-shadow: 0 0 10px rgba(246, 96, 161, 0.7);
+}
+.glow-button:hover {
+    box-shadow: 0 0 20px rgba(246, 96, 161, 1.2);
+}
+.glow-tag {
+    box-shadow: 0 0 8px rgba(246, 96, 161, 0.8);
+}
+
+/* Keyframes for Blink Effect */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Apply Poppins font if imported */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Specifics */
+nav .text-xl.font-bold {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+nav a {
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+}
+nav a:hover {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+/* Hero Section Specifics */
+#home h1 .text-pink-light {
+    text-shadow: 0 0 10px rgba(246, 96, 161, 0.8);
+}
+#home .bg-pink-darkest {
+    background-color: #c5307c; /* Ensure this is the correct dark pink for the circle */
+    box-shadow: 0 0 20px rgba(246, 96, 161, 0.5); /* Subtle glow around the image circle */
+}
+#home .absolute.bg-card-bg {
+    background-color: #1A1A1A; /* Dark background for "Available for Internship" box */
+    border: 1px solid #333333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Cards Specifics */
+.project-card {
+    border: 1px solid #333333; /* Subtle border */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+.project-card:hover {
+    transform: translateY(-8px); /* Slightly more pronounced lift */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(246, 96, 161, 0.8); /* Stronger glow on hover */
+}
+
+/* Skill Meters Specifics */
+.skill-meter::-webkit-progress-bar {
+    background-color: #333333; /* Darker background for progress bar */
+    border-radius: 10px;
+}
+.skill-meter::-webkit-progress-value {
+    background-color: #f660a1; /* Pink fanta for progress value */
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(246, 96, 161, 1); /* Intense glow for progress */
+}
+
+/* Organizational Experience Timeline Specifics */
+.timeline-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 24px;
+    height: calc(100% - 24px);
+    width: 2px;
+    background-color: #f660a1; /* Pink fanta line */
+    box-shadow: 0 0 8px rgba(246, 96, 161, 0.8); /* Stronger glow for line */
+}
+.timeline-dot {
+    background-color: #e0247e; /* Pink fanta dot */
+    border-color: #1A1A1A; /* Dark border for dot */
+    box-shadow: 0 0 12px rgba(246, 96, 161, 1); /* Intense glow for dot */
+}
+.timeline-item .bg-card-bg {
+    border: 1px solid #333333; /* Subtle border */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Icons Specifics */
+.contact-icons a {
+    text-shadow: 0 0 10px rgba(246, 96, 161, 0.8); /* Stronger glow for icons */
+}
+.contact-icons a:hover {
+    text-shadow: 0 0 20px rgba(246, 96, 161, 1.2); /* More intense glow on hover */
+}
+
+/* Footer Specifics */
+footer {
+    border-top: 1px solid #333333; /* Subtle border */
+}

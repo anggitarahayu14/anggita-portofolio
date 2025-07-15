@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anggita Rahayu Putri - IT Project Manager Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Optional: Google Fonts for a more modern/futuristic feel -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans bg-dark-bg text-light-text">
+    <!-- Navigation -->
+    <nav class="bg-nav-dark shadow-sm sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-pink-accent">ANGGITA RAHAYU PUTRI</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-pink-accent hover:text-pink-light transition">Home</a>
+                    <a href="#projects" class="hover:text-pink-light transition">Projects</a>
+                    <a href="#skills" class="hover:text-pink-light transition">Skills</a>
+                    <a href="#experience" class="hover:text-pink-light transition">Experience</a>
+                    <a href="#contact" class="hover:text-pink-light transition">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-300 hover:text-pink-accent">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-nav-dark pb-4 px-4 shadow-lg">
+            <a href="#home" class="block py-2 text-pink-accent font-medium">Home</a>
+            <a href="#projects" class="block py-2 hover:text-pink-light transition">Projects</a>
+            <a href="#skills" class="block py-2 hover:text-pink-light transition">Skills</a>
+            <a href="#experience" class="block py-2 hover:text-pink-light transition">Experience</a>
+            <a href="#contact" class="block py-2 hover:text-pink-light transition">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="py-20 bg-gradient-to-r from-dark-bg-lighter to-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold text-pink-accent mb-4">Hi, I'm <span class="text-pink-light">Anggita Rahayu Putri</span></h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-light-text mb-6">Aspiring IT Project Manager</h2>
+                <p class="text-secondary-text mb-8 text-lg max-w-lg">
+                    Active undergraduate student with a strong background in Information Systems and hands-on experience in project management and public relations.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-pink-main hover:bg-pink-darker text-white px-6 py-3 rounded-lg font-medium transition glow-button">View Projects</a>
+                    <a href="#contact" class="border-2 border-pink-main text-pink-main hover:bg-pink-main hover:text-white px-6 py-3 rounded-lg font-medium transition glow-button">Contact Me</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 bg-pink-darkest rounded-full flex items-center justify-center overflow-hidden border-8 border-dark-bg shadow-xl">
+                        <img src="image.jpg" alt="Professional portrait of Anggita Rahayu Putri" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-5 -right-5 bg-card-bg p-4 rounded-lg shadow-lg">
+                        <div class="flex items-center">
+                            <div class="bg-green-100 p-2 rounded-full mr-2">
+                                <i class="fas fa-check text-green-600"></i>
+                            </div>
+                            <span class="font-medium text-light-text">Available for Internship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-pink-accent mb-4">Project Management Experience</h2>
+                <p class="text-secondary-text max-w-2xl mx-auto">Projects showcasing my skills in IT project management and development.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-card-bg rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="project1.png" alt="To-Do List Website Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-pink-darker text-white rounded-full text-sm font-medium mb-2 glow-tag">Web Development</span>
+                        <h3 class="text-xl font-semibold mb-2 text-pink-main">To-Do List Website</h3>
+                        <p class="text-secondary-text mb-4">
+                            Developed a responsive to-do list web application using HTML, CSS, and PHP, integrating MySQL for real-time data storage.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-tertiary-text mr-2"></i>
+                                <span class="text-sm text-tertiary-text">Solo Project</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-tertiary-text mr-2"></i>
+                                <span class="text-sm text-tertiary-text">Jan 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-card-bg rounded-xl shadow-md overflow-hidden transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="project2.png" alt="Catering Order App Project" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <span class="inline-block px-3 py-1 bg-pink-darker text-white rounded-full text-sm font-medium mb-2 glow-tag">Mobile Development</span>
+                        <h3 class="text-xl font-semibold mb-2 text-pink-main">Caterly - Catering Order App</h3>
+                        <p class="text-secondary-text mb-4">
+                            Built a mobile application using Android Studio to simplify catering order processes, implementing features for menu display and order scheduling.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <i class="fas fa-users text-tertiary-text mr-2"></i>
+                                <span class="text-sm text-tertiary-text">Solo Project</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-calendar-alt text-tertiary-text mr-2"></i>
+                                <span class="text-sm text-tertiary-text">Jul 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- View More Button -->
+            <div class="text-center mt-12">
+                <button class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-pink-darker hover:bg-pink-darkest transition glow-button">
+                    View Full Project Archive
+                    <i class="fas fa-chevron-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 bg-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-pink-accent mb-4">Technical Skills</h2>
+                <p class="text-secondary-text max-w-2xl mx-auto">Skills relevant to IT project management and software development.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Programming Skills -->
+                <div class="bg-card-bg p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-6 border-b pb-2 text-pink-accent">Programming Languages</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-light-text font-medium">Java</span>
+                                <span class="text-tertiary-text">85%</span>
+                            </div>
+                            <progress class="skill-meter w-full h-2" value="85" max="100"></progress>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-light-text font-medium">PHP</span>
+                                <span class="text-tertiary-text">80%</span>
+                            </div>
+                            <progress class="skill-meter w-full h-2" value="80" max="100"></progress>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-light-text font-medium">JavaScript</span>
+                                <span class="text-tertiary-text">75%</span>
+                            </div>
+                            <progress class="skill-meter w-full h-2" value="75" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Soft Skills -->
+                <div class="bg-card-bg p-6 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-semibold mb-6 border-b pb-2 text-pink-accent">Soft Skills</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-light-text font-medium">Teamwork</span>
+                                <span class="text-tertiary-text">90%</span>
+                            </div>
+                            <progress class="skill-meter w-full h-2" value="90" max="100"></progress>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-light-text font-medium">Public Speaking</span>
+                                <span class="text-tertiary-text">85%</span>
+                            </div>
+                            <progress class="skill-meter w-full h-2" value="85" max="100"></progress>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="text-light-text font-medium">Leadership</span>
+                                <span class="text-tertiary-text">88%</span>
+                            </div>
+                            <progress class="skill-meter w-full h-2" value="88" max="100"></progress>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 bg-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-pink-accent mb-4">Organizational Experience</h2>
+                <p class="text-secondary-text max-w-2xl mx-auto">Roles that demonstrate my leadership and project management skills.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- Experience Item 1: PPMB Group Mentor -->
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-pink-darker border-4 border-pink-lightest z-10 timeline-dot"></div>
+                    <div class="bg-card-bg p-6 rounded-lg shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-lg font-semibold text-pink-main">PPMB Group Mentor</h3>
+                            <span class="text-pink-accent font-medium">Aug 2024 - Sep 2024</span>
+                        </div>
+                        <h4 class="text-light-text mb-3">STMIK Widya Utama</h4>
+                        <ul class="list-disc list-inside space-y-1 text-secondary-text">
+                            <li>Served as a mentor for a group of new students during the campus orientation program (PPMB).</li>
+                            <li>Assisted in introducing academic systems, campus regulations, and student life activities.</li>
+                            <li>Provided guidance, answered questions, and encouraged active participation within the group.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Experience Item 2: PIKR Nawasena – Treasurer -->
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-pink-darker border-4 border-pink-lightest z-10 timeline-dot"></div>
+                    <div class="bg-card-bg p-6 rounded-lg shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-lg font-semibold text-pink-main">Treasurer</h3>
+                            <span class="text-pink-accent font-medium">2024 - 2025</span>
+                        </div>
+                        <h4 class="text-light-text mb-3">PIKR Nawasena</h4>
+                        <ul class="list-disc list-inside space-y-1 text-secondary-text">
+                            <li>Oversaw the organization's overall financial planning and daily fund management throughout the period.</li>
+                            <li>Prepared and maintained comprehensive financial reports for multiple programs and activities.</li>
+                            <li>Monitored all income and expenses, ensuring transparent and accurate financial tracking.</li>
+                            <li>Implemented budget control measures to avoid overspending.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3: PIKR Nawasena – Treasurer & Sponsorship, Duta GenRe Selection Event -->
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-pink-darker border-4 border-pink-lightest z-10 timeline-dot"></div>
+                    <div class="bg-card-bg p-6 rounded-lg shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-lg font-semibold text-pink-main">Treasurer & Sponsorship, Duta GenRe Selection Event</h3>
+                            <span class="text-pink-accent font-medium">2024 - 2025</span>
+                        </div>
+                        <h4 class="text-light-text mb-3">PIKR Nawasena</h4>
+                        <ul class="list-disc list-inside space-y-1 text-secondary-text">
+                            <li>Managed financial reporting and controlled both income and expenditures throughout the event.</li>
+                            <li>Successfully secured sponsorships by engaging brand partners to support the event.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4: HMPSSI STMIK Widya Utama – Public Relations Officer -->
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-pink-darker border-4 border-pink-lightest z-10 timeline-dot"></div>
+                    <div class="bg-card-bg p-6 rounded-lg shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-lg font-semibold text-pink-main">Public Relations Officer</h3>
+                            <span class="text-pink-accent font-medium">2024 - 2025</span>
+                        </div>
+                        <h4 class="text-light-text mb-3">HMPSSI STMIK Widya Utama</h4>
+                        <ul class="list-disc list-inside space-y-1 text-secondary-text">
+                            <li>Managed internal and external communications of the student organization.</li>
+                            <li>Built relationships with stakeholders to support program publicity and outreach.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 5: HMPSSI STMIK Widya Utama – Public Relations Officer Sponsorship, National Seminar Event -->
+                <div class="timeline-item relative pl-8 pb-8">
+                    <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-pink-darker border-4 border-pink-lightest z-10 timeline-dot"></div>
+                    <div class="bg-card-bg p-6 rounded-lg shadow-sm">
+                        <div class="flex flex-col md:flex-row justify-between mb-2">
+                            <h3 class="text-lg font-semibold text-pink-main">Public Relations Officer Sponsorship, National Seminar Event</h3>
+                            <span class="text-pink-accent font-medium">May - July 2025</span>
+                        </div>
+                        <h4 class="text-light-text mb-3">HMPSSI STMIK Widya Utama</h4>
+                        <ul class="list-disc list-inside space-y-1 text-secondary-text">
+                            <li>Took the lead in external communications and sponsor partnerships for a national seminar.</li>
+                            <li>Negotiated and secured sponsorships to support event execution.</li>
+                            <li>Successfully engaged and collaborated with more than 5 brand partners to support the event financially and logistically.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-pink-accent mb-4">Contact Me</h2>
+                <p class="text-secondary-text max-w-2xl mx-auto">Feel free to reach out through the following platforms:</p>
+            </div>
+            <div class="flex justify-center space-x-8 contact-icons">
+                <a href="mailto:anggitaputri1480@gmail.com" class="text-pink-accent hover:text-pink-light">
+                    <i class="fas fa-envelope fa-2x"></i>
+                </a>
+                <a href="https://www.instagram.com/gallerianggit" target="_blank" class="text-pink-accent hover:text-pink-light">
+                    <i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://github.com/Anggitarahayu14" target="_blank" class="text-pink-accent hover:text-pink-light">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-nav-dark">
+        <div class="max-w-6xl mx-auto text-center text-tertiary-text">
+            <p>&copy; 2023 Anggita Rahayu Putri. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
